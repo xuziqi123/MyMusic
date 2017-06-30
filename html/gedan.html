@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<link rel="stylesheet" href="../css/public.css">
+<link rel="stylesheet" href="../css/stylegedan.css">
+<script src="../js/jquery-1.11.1.min.js"></script>
+<!--
+<script src="../js/music.js"></script>
+-->
+<script src="../js/gedan.js"></script>
+<script src="../js/public.js"></script>
+<body>
+<div class="logo">
+    <div class="fengche">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul class="ulfirst">
+        <li dataName="do"><a href="#">音乐库</a><span></span></li>
+        <li dataName="re"><a href="#">歌手库</a><span></span></li>
+        <li dataName="mi"><a href="#">图库</a><span></span></li>
+        <li dataName="fa"><a href="#">歌词</a><span></span></li>
+    </ul>
+    <div class="upload">
+        <div class="uploadpic">
+            <span class="imgbut"></span>
+            <div class="edit" contenteditable="true" placeholder="请上传图片和发表评论"></div>
+        </div>
+        <div class="mesagebut">
+            <span>本地相册</span>
+            <span class="tzspan">拖拽上传</span>
+            <span class="fabiao">发表</span>
+        </div>
+        <div class="tzimg">
+            <p class="tishi" id="ts">请将图片拖拽到此区域</p>
+        </div>
+    </div>
+    <!-- 二级菜单开始-->
+    <div class="logosecond">
+        <span class="shouye"><a href="index2.html">首页</a></span>
+        <div class="logo_ul1 show" style="opacity:1;">
+            <ul>
+                <li><a href="gedan.html">排行榜</a></li>
+                <li><a href="gedan.html">歌手</a></li>
+                <li><a href="gedan.html">专辑</a></li>
+                <li><a href="gedan.html">电台</a></li>
+            </ul>
+        </div>
+        <div class="logo_ul1">
+            <ul>
+                <li>MV推荐</li>
+                <li>MV库</li>
+                <li>MV专辑</li>
+                <li>现场直播</li>
+                <li>下载KTV</li>
+            </ul>
+        </div>
+        <div class="logo_ul1">
+            <ul>
+                <li>主题</li>
+                <li>歌单</li>
+                <li>MV收藏</li>
+                <li>试听</li>
+                <li>分类</li>
+            </ul>
+        </div>
+        <div class="logo_ul1">
+            <ul>
+                <li>电脑版本</li>
+                <li>pad版本</li>
+                <li>手机版本</li>
+                <li>直播</li>
+                <li>网页直播</li>
+            </ul>
+        </div>
+    </div>
+    <!--二级菜单结束-->
+    <a class='up' href="#">收起</a>
+</div>
+<div class="musiclogo">
+    <audio id="music" src="../mp3/do.mp3"></audio>
+</div>
+<div id="main">
+    <div class="left fl">
+        <div class="seardiv">
+            <input type="text" name="text" class="text"/>
+            <input type="button" value="" name="text" class="search"/>
+        </div>
+        <ul>
+           <li>
+               <span class="GD_span"><a href="#">全部歌手</a></span>
+                <div class="con">
+                    <p><a href="#">全部歌手</a></p>
+                    <p><a href="#">关注歌手</a></p>
+                    <p><a href="#">酷狗音乐人</a></p>
+                </div>
+           </li>
+            <li>
+                <span class="GD_span"><a href="#">华语</a></span>
+                <div class="con">
+                    <p><a href="#">华语男歌手</a></p>
+                    <p><a href="#">华语女歌手</a></p>
+                    <p><a href="#">华语组合</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="GD_span"><a href="#">韩国</a></span>
+                <div class="con">
+                    <p><a href="#">韩语女歌手</a></p>
+                    <p><a href="#">韩语男歌手</a></p>
+                    <p><a href="#">韩国组合</a></p>
+                </div>
+            </li>
+            <li>
+                <span class="GD_span"><a href="#">日本</a></span>
+                <div class="con">
+                    <p><a href="#">日本女歌手</a></p>
+                    <p><a href="#">日本男歌手</a></p>
+                    <p><a href="#">日本组合</a></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="middle fl">
+
+    </div>
+    <div class="right fr">
+
+    </div>
+</div>
+</body>
+</html>

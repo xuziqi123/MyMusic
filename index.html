@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>在线音乐点播</title>
+</head>
+<link rel="stylesheet" href="css/public.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/music.js"></script>
+<script src="js/public.js"></script>
+<body>
+<div class="logo">
+    <div class="fengche">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul class="ulfirst">
+        <li dataName="do"><a href="#">音乐库</a><span></span></li>
+        <li dataName="re"><a href="#">歌手库</a><span></span></li>
+        <li dataName="mi"><a href="#">图库</a><span></span></li>
+        <li dataName="fa"><a href="#">歌词</a><span></span></li>
+    </ul>
+    <div class="upload">
+        <div class="uploadpic">
+             <span class="imgbut"></span>
+             <div class="edit" contenteditable="true" placeholder="请上传图片和发表评论"></div>
+        </div>
+        <div class="mesagebut">
+            <span>本地相册</span>
+            <span class="tzspan">拖拽上传</span>
+            <span class="fabiao">发表</span>
+        </div>
+        <div class="tzimg">
+            <p class="tishi" id="ts">请将图片拖拽到此区域</p>
+        </div>
+    </div>
+    <!-- 二级菜单开始-->
+    <div class="logosecond">
+        <span class="shouye"><a href="javascript:void(0)">首页</a></span>
+        <div class="logo_ul1 show" style="opacity:1;">
+            <ul>
+                <li><a href="gedan.html">排行榜</a></li>
+                <li><a href="gedan.html">歌手</a></li>
+                <li><a href="gedan.html">专辑</a></li>
+                <li><a href="gedan.html">电台</a></li>
+            </ul>
+        </div>
+        <div class="logo_ul1">
+            <ul>
+                <li><a href="gedan.html">MV推荐</a></li>
+                <li><a href="gedan.html">MV库</a></li>
+                <li><a href="gedan.html">MV专辑</a></li>
+                <li><a href="gedan.html">现场直播</a></li>
+                <li><a href="gedan.html">下载KTV</a></li>
+            </ul>
+        </div>
+        <div class="logo_ul1">
+            <ul>
+                <li><a href="gedan.html">主题</a></li>
+                <li><a href="gedan.html">歌单</a></li>
+                <li><a href="gedan.html">MV收藏</a></li>
+                <li><a href="gedan.html">试听</a></li>
+                <li><a href="gedan.html">分类</a></li>
+            </ul>
+        </div>
+        <div class="logo_ul1">
+            <ul>
+                <li><a href="gedan.html">电脑版本</a></li>
+                <li><a href="gedan.html">pad版本</a></li>
+                <li><a href="gedan.html">手机版本</a></li>
+                <li><a href="gedan.html">直播</a></li>
+                <li><a href="gedan.html">网页直播</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--二级菜单结束-->
+    <a class='up' href="#">收起</a>
+</div>
+<div class="musiclogo">
+    <audio id="music" src="mp3/do.mp3"></audio>
+</div>
+<div class="wrap">
+    <ul>
+        <li ><img src="images/pic1.jpg"title="梦的翅膀受了伤" dataSrc="music/蒋雪儿 - 梦的翅膀受了伤.mp3"/></li>
+        <li><img src="images/pic2.jpg" title="半壶纱" dataSrc="music/刘珂矣 - 半壶纱.mp3"/></li>
+        <li><img src="images/pic3.jpg" title="渡风"  dataSrc="music/刘珂矣 - 渡风.mp3"/></li>
+        <li><img src="images/pic4.jpg" title="忘尘谷" dataSrc="music/刘珂矣 - 忘尘谷.mp3"/></li>
+    </ul>
+    <div class="geci">
+        <span class="tite">《梦的翅膀受了伤》</span>
+        <span class="name">蒋雪儿</span>
+        <div class="gecibox">
+            <div class="text">
+
+            </div>
+        </div>
+    </div>
+    <div class="con">
+        <textarea class="textarea" style="position:absolute;z-index:14;display:none;">
+            [ar:梦的翅膀受了伤 蒋雪儿]
+[ti:梦的翅膀受了伤 蒋雪儿 ]
+[00:00.50]梦的翅膀受了伤 - 蒋雪儿
+[00:28.27]隐隐坠下季节的落叶
+[00:34.42]阵阵秋风吹得好凄凉
+[00:40.56]我的忧伤飘散在远方
+[00:47.12]没有你我感觉好孤单
+[00:53.37]思念已经化成了眼泪
+[00:59.81]一滴一滴刺痛我的心
+[01:06.00]梦的翅膀已经受了伤
+[01:12.35]我飞不到有你的地方
+[01:18.66]每次想你我都会心痛
+[01:24.23]我的思念转过寂静的天空
+[01:31.24]我的记忆里有你的痕迹
+[01:37.60]我的爱在寂寞世界里
+[01:43.96]天空飘过流浪的白云
+[01:49.36]就像我们已经破碎的爱情
+[01:56.54]爱得太累心已憔悴
+[02:02.97]让风吹干受伤的眼泪
+[02:34.16]思念已经化成了眼泪
+[02:40.82]一滴一滴刺痛我的心
+[02:47.07]梦的翅膀已经受了伤
+[02:53.38]我飞不到有你的地方
+[02:59.78]每次想你我都会心痛
+[03:05.20]我的思念转过寂静的天空
+[03:12.27]我的记忆里有你的痕迹
+[03:18.67]我的爱在寂寞世界里
+[03:25.02]天空飘过流浪的白云
+[03:30.17]就像我们已经破碎的爱情
+[03:37.60]爱得太累心已憔悴
+[03:43.96]让风吹干受伤的眼泪
+[03:50.31]让风吹干受伤的眼泪
+[03:56.57]让风吹干受伤的眼泪
+        </textarea>
+    </div>
+</div>
+<div class="mSIC">
+    <div class="control">
+        <div class="img">
+            <img src="images/pic1.jpg"/>
+            <span>渡风</span>
+        </div>
+        <div class="btn">
+            <a href="#" class="prev"></a>
+            <a href="#" class="player"><img src="images/player.jpg"/></a>
+            <a href="#" class="next"></a>
+        </div>
+        <div class="shousuo">
+            <img src="images/but.png"/>
+        </div>
+        <div class="musicbegin"></div>
+        <div class="jindu">
+            <p class="jd1"></p>
+            <p class="jd2"></p>
+            <p class="jd3"></p>
+        </div>
+        <img src="images/list.svg" class="listimg"/>
+        <div class="MUSIC"></div>
+    </div>
+    <div class="menu">
+        <ul class="list">
+            <li><a href="javascript:void(0);" dataSrc="music/Coldplay - Magic.mp3">Coldplay-Magic</a></li>
+            <li><a href="javascript:void(0);" dataSrc="music/刘珂矣 - 半壶纱.mp3">刘珂矣 - 半壶纱</a></li>
+            <li><a href="javascript:void(0);" dataSrc="music/刘珂矣 - 渡风.mp3">刘珂矣 - 渡风</a></li>
+            <li><a href="javascript:void(0);" dataSrc="music/刘珂矣 - 忘尘谷.mp3">刘珂矣 - 忘尘谷</a></li>
+            <li><a href="javascript:void(0);" dataSrc="music/G.E.M.邓紫棋 - 喜欢你.mp3">G.E.M.邓紫棋 - 喜欢你</a></li>
+            <li><a href="javascript:void(0);" dataSrc="music/刘珂矣 - 芙蓉雨.mp3">刘珂矣 - 芙蓉雨</a></li>
+
+            <li><a href="javascript:void(0);" dataSrc="music/齐晨 - 咱们结婚吧.mp3">齐晨 - 咱们结婚吧</a></li>
+            <li><a href="javascript:void(0);" dataSrc="music/孙子涵 - 连借口都没有.mp3">孙子涵 - 连借口都没有</a></li>
+            <li><a href="javascript:void(0);" dataSrc="music/王奕心 - 白莲.mp3">王奕心 - 白莲</a></li>
+            <li><a href="javascript:void(0);" dataSrc="music/邱永传 - 十二年.mp3">邱永传 - 十二年</a></li>
+            <li><a href="javascript:void(0);" dataSrc="music/玄觞 - 黯然销魂.mp3">玄觞 - 黯然销魂</a></li>
+            <li><a href="javascript:void(0);" dataSrc="music/蒋雪儿 - 梦的翅膀受了伤.mp3">蒋雪儿 - 梦的翅膀受了伤</a></li>
+        </ul>
+    </div>
+</div>
+<div class="nav">
+    <div class="pic">
+        <p class="prevb"><img src="images/prev.svg"></p>
+        <p class="nextb"><img src="images/next.svg"></p>
+        <ul>
+            <li><img src="images/wangfei.jpg"/><span>王菲粉丝版MV</span></li>
+            <li><img src="images/hot3.jpg"/><span>罗志祥丝版MV</span></li>
+            <li><img src="images/fei.jpg"/><span>王菲演唱会</span></li>
+            <li class="font"><img src="images/weichen3.jpeg"/><span>魏晨演唱会</span></li>
+            <li class="new"><img src="images/wanglihong.jpg" /><span>王力宏演唱会</span></li>
+            <li class="late"><img src="images/xusong7.jpg"/><span>许嵩粉丝版MV</span></li>
+            <li><img src="images/xusong.jpg"/><span>半尘烟沙</span></li>
+            <li><img src="images/zhoujielun.jpg"/><span>周杰伦粉丝版MV</span></li>
+        </ul>
+    </div>
+    <div class="oulbtn">
+        <ul>
+            <li></li>
+            <li ></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!--导航结束-->
+</div>
+
+<!--在线点播开始-->
+<div class="firstbread">
+<div class="title">
+       <a href="#" class="title_a1">在线首发</a><a href="#" class="title_a2 ">/更多</a>
+       <ul>
+           <li>1</li>
+           <li>2</li>
+           <li>3</li>
+       </ul>
+</div>
+    <div class="listimg">
+        <ul >
+           <li>
+            <img src="images/1-1.jpg" class='_img'/>
+               <span class="span">
+                   <span>张杰演唱会 </span>
+                   <p>咱们结婚吧</p>
+                   <p><img src="images/bofang.svg" /></p>
+               </span>
+            <a href="javascript:void(0)"><p>歌曲</p><strong>4</strong></a>
+            <a href="javascript:void(0)"><p>试听</p><strong>108</strong></a>
+        </li>
+            <li>
+                <img class='_img' src="images/1-2.jpg"/>
+               <span class="span">
+                   <span>张杰演唱会 </span>
+                   <p>咱们结婚吧</p>
+                   <p><img src="images/bofang.svg"/></p>
+               </span>
+                <a href="javascript:void(0)"><p>歌曲</p><strong>4</strong></a>
+                <a href="javascript:void(0)"><p>试听</p><strong>108</strong></a>
+            </li>
+            <li>
+                <img src="images/1-3.jpg" class='_img'/>
+               <span class="span">
+                   <span>张杰演唱会 </span>
+                   <p>咱们结婚吧</p>
+                   <p><img src="images/bofang.svg"/></p>
+               </span>
+                <a href="javascript:void(0)"><p>歌曲</p><strong>4</strong></a>
+                <a href="javascript:void(0)"><p>试听</p><strong>108</strong></a>
+            </li>
+            <li>
+                <img src="images/1-4.jpg" class='_img'/>
+               <span class="span">
+                   <span>张杰演唱会 </span>
+                   <p>咱们结婚吧</p>
+                   <p><img src="images/bofang.svg"/></p>
+               </span>
+                <a href="javascript:void(0)"><p>歌曲</p><strong>4</strong></a>
+                <a href="javascript:void(0)"><p>试听</p><strong>108</strong></a>
+            </li>
+            <li>
+                <img src="images/1-5.jpg" class='_img'/>
+               <span class="span">
+                   <span>张杰演唱会 </span>
+                   <p>咱们结婚吧</p>
+                   <p><img src="images/bofang.svg"/></p>
+               </span>
+                <a href="javascript:void(0)"><p>歌曲</p><strong>4</strong></a>
+                <a href="javascript:void(0)"><p>试听</p><strong>108</strong></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="hotlist">
+
+        <div class="tit ">
+            <span>最新推荐</span>
+            <a href="javascript:void(0)"><img src="images/bofang2.svg"/></a>
+            <a href="javascript:void(0)" class="title_a1 "><img src="images/tianjia2.svg"/></a>
+            <a href="javascript:void(0)" class="title_a2 ">/更多</a>
+        </div>
+        <div class="tit">
+            <span>最新推荐</span>
+            <a href="javascript:void(0)"><img src="images/bofang2.svg"/></a>
+            <a href="javascript:void(0)" class="title_a1 "><img src="images/tianjia2.svg"/></a>
+            <a href="javascript:void(0)" class="title_a2 ">/更多</a>
+        </div>
+        <div class="tit ">
+            <span>巅峰榜</span>
+            <a href="javascript:void(0)"><img src="images/bofang2.svg"/></a>
+            <a href="javascript:void(0)" class="title_a1 "><img src="images/tianjia2.svg"/></a>
+            <a href="javascript:void(0)" class="title_a2 ">/更多</a>
+        </div>
+
+<div class="_list">
+    <ul class="_ul list_Left" id="ul_left">
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">爱情大师-崔子格</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">就是现在-王力宏</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">爱情大师-崔子格</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">爱情大师-崔子格</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">爱情大师-崔子格</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">爱情大师-崔子格</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">爱情大师-崔子格</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">爱情大师-崔子格</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">爱情大师-崔子格</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">爱情大师-崔子格</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">爱情大师-崔子格</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+    </ul>
+    <ul class="_ul list_Middle" id="ul_Middle">
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">连接口都没有-孙子涵</a>
+             <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">连接口都没有-孙子涵</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">连接口都没有-孙子涵</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">连接口都没有-孙子涵</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">连接口都没有-孙子涵</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">连接口都没有-孙子涵</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">连接口都没有-孙子涵</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">连接口都没有-孙子涵</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">连接口都没有-孙子涵</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">连接口都没有-孙子涵</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 ">连接口都没有-孙子涵</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+        </li>
+    </ul ul_left>
+    <ul class="_ul list_right" id="ul_right">
+        <li>
+            <a href="javascript:void(0)" class="title_a2 "><i class="first_place">1</i>半壶纱-刘珂矣</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 "><i class="second_place">2</i>半壶纱-刘珂矣</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 "><i class="third_place">3</i>"半壶纱-刘珂矣"</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 "><i>4</i>半壶纱-刘珂矣</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 "><i>5</i>半壶纱-刘珂矣</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 "><i>6</i>半壶纱-刘珂矣</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 "><i>7</i>半壶纱-刘珂矣</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 "><i>8</i>半壶纱-刘珂矣</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 "><i>9</i>半壶纱-刘珂矣</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 "><i>10</i>半壶纱-刘珂矣</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+        <li>
+            <a href="javascript:void(0)" class="title_a2 "><i>10</i>半壶纱-刘珂矣</a>
+            <a href="javascript:void(0)"><img src="images/bofang3.svg"/></a>
+            <a href="javascript:void(0)"><img src="images/zhuanfa.svg"/></a>
+
+        </li>
+    </ul>
+</div>
+</div>
+<!--MV热播-->
+<div class="firstbread MVfirstbread" style="margin-top:70px;">
+    <div class="title">
+        <a href="#" class="title_a1">M V 首播</a><a href="#" class="title_a2 ">/更多</a>
+        <ul>
+            <li>首播|</li>
+            <li>内地|</li>
+            <li>港台</li>
+        </ul>
+    </div>
+    <div class="MVlistimg">
+        <ul >
+            <li>
+            <img src="images/huyanbin2.jpg" class='_img'/>
+            <div class="div">
+                <span>红颜-胡彦斌</span>
+                <p><img src="images/bofang.svg" /></p>
+                <p><img src="images/sanjiao.svg"/><strong>1377190</strong></p>
+                <p>2016-8-15</p>
+            </div>
+            <span href="javascript:void(0)" class="MVspan MVspan1">红颜</span>
+            <span href="javascript:void(0)" class="MVspan MVspan2">胡彦斌</span>
+        </li>
+            <li>
+                <img src="images/wanglihong.jpg" class='_img'/>
+                <div class="div">
+                    <span>裂心-王力宏</span>
+                    <p><img src="images/bofang.svg" /></p>
+                    <p><img src="images/sanjiao.svg"/><strong>1377190</strong></p>
+                    <p>2016-8-15</p>
+                </div>
+                <span href="javascript:void(0)" class="MVspan MVspan1">裂心</span>
+                <span href="javascript:void(0)" class="MVspan MVspan2">王力宏</span>
+            </li>
+            <li>
+                <img src="images/zhoujielun.jpg" class='_img'/>
+                <div class="div">
+                    <span>简单爱-周杰伦</span>
+                    <p><img src="images/bofang.svg" /></p>
+                    <p><img src="images/sanjiao.svg"/><strong>1377190</strong></p>
+                    <p>2016-8-15</p>
+                </div>
+                <span href="javascript:void(0)" class="MVspan MVspan1">简单爱</span>
+                <span href="javascript:void(0)" class="MVspan MVspan2">周杰伦</span>
+            </li>
+            <li>
+                <img src="images/weichen.jpg" class='_img'/>
+                <div class="div">
+                    <span>你身边的-魏晨</span>
+                    <p><img src="images/bofang.svg" /></p>
+                    <p><img src="images/sanjiao.svg"/><strong>1377190</strong></p>
+                    <p>2016-8-15</p>
+                </div>
+                <span href="javascript:void(0)" class="MVspan MVspan1">你身边的</span>
+                <span href="javascript:void(0)" class="MVspan MVspan2">魏晨</span>
+            </li>
+            <li>
+                <img src="images/sunzihan.jpg" class='_img'/>
+                <div class="div">
+                    <span>连借口都没有-孙子涵</span>
+                    <p><img src="images/bofang.svg" /></p>
+                    <p><img src="images/sanjiao.svg"/><strong>1377190</strong></p>
+                    <p>2016-8-15</p>
+                </div>
+                <span href="javascript:void(0)" class="MVspan MVspan1">连借口都没有</span>
+                <span href="javascript:void(0)" class="MVspan MVspan2">孙子涵</span>
+            </li><li>
+            <img src="images/xusong.jpg" class='_img'/>
+            <div class="div">
+                <span>惊鸿一面-许嵩</span>
+                <p><img src="images/bofang.svg" /></p>
+                <p><img src="images/sanjiao.svg"/><strong>1377190</strong></p>
+                <p>2016-8-15</p>
+            </div>
+            <span href="javascript:void(0)" class="MVspan MVspan1">惊鸿一面</span>
+            <span href="javascript:void(0)" class="MVspan MVspan2">许嵩</span>
+        </li>
+            <li>
+                <img src="images/xusong2.jpg" class='_img'/>
+                <div class="div">
+                    <span>别咬我-许嵩</span>
+                    <p><img src="images/bofang.svg" /></p>
+                    <p><img src="images/sanjiao.svg"/><strong>1377190</strong></p>
+                    <p>2016-8-15</p>
+                </div>
+                <span href="javascript:void(0)" class="MVspan MVspan1">别咬我</span>
+                <span href="javascript:void(0)" class="MVspan MVspan2">许嵩</span>
+            </li>
+            <li>
+                <img src="images/weichen2.jpg" class='_img'/>
+                <div class="div">
+                    <span>花开那年-魏晨</span>
+                    <p><img src="images/bofang.svg" /></p>
+                    <p><img src="images/sanjiao.svg"/><strong>1377190</strong></p>
+                    <p>2016-8-15</p>
+                </div>
+                <span href="javascript:void(0)" class="MVspan MVspan1">花开那年</span>
+                <span href="javascript:void(0)" class="MVspan MVspan2">魏晨</span>
+            </li>
+            <li>
+                <img src="images/weichen3.jpeg" class='_img'/>
+                <div class="div">
+                    <span>你最近好吗-魏晨</span>
+                    <p><img src="images/bofang.svg" /></p>
+                    <p><img src="images/sanjiao.svg"/><strong>1377190</strong></p>
+                    <p>2016-8-15</p>
+                </div>
+                <span href="javascript:void(0)" class="MVspan MVspan1">你最近好吗</span>
+                <span href="javascript:void(0)" class="MVspan MVspan2">魏晨</span>
+            </li>
+            <li>
+                <img src="images/xusong3.jpg" class='_img'/>
+                <div class="div">
+                    <span>多余的解释-许嵩</span>
+                    <p><img src="images/bofang.svg" /></p>
+                    <p><img src="images/sanjiao.svg"/><strong>1377190</strong></p>
+                    <p>2016-8-15</p>
+                </div>
+                <span href="javascript:void(0)" class="MVspan MVspan1">多余的解释</span>
+                <span href="javascript:void(0)" class="MVspan MVspan2">许嵩</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="JXji firstbread">
+    <div class="title JXtitle1">
+        <a href="#" class="title_a1">精选集</a><a href="#" class="title_a2 ">/更多</a>
+    </div>
+    <div class="title JXtitle2">
+        <a href="#" class="title_a1">歌曲分类</a><a href="#" class="title_a2 ">/更多</a>
+    </div>
+    <div class="JXpic" id="JXDIV">
+        <ul class="JX_list">
+            <li><a href="javascript:void(0)"><img src="images/hot1.jpg"/></a></li>
+            <li><a href="javascript:void(0)"><img src="images/hot2.jpg"/></a></li>
+            <li><a href="javascript:void(0)"><img src="images/hot5.jpg"/></a></li>
+            <li><a href="javascript:void(0)"><img src="images/hot4.jpg"/></a></li>
+        </ul>
+        <ul class="JXol">
+            <li><a href="javascript:void(0)"><img src="images/hot1.jpg"/></a></li>
+            <li><a href="javascript:void(0)"><img src="images/hot2.jpg"/></a></li>
+            <li><a href="javascript:void(0)"><img src="images/hot5.jpg"/></a></li>
+            <li><a href="javascript:void(0)"><img src="images/hot4.jpg"/></a></li>
+        </ul>
+        <p>小苹果神曲</p>
+    </div>
+    <!--喜马拉雅风云榜-->
+    <div class="JX2wrap">
+        <div class="JXpic2">
+            <h2>喜马拉雅风云榜</h2>
+            <div>
+                <span><em class="em1">01</em><a href="#">逻辑思维第二季</a><img src="images/bofang4.svg"/></span>
+                <div>
+                    <span ><em class="em2">02</em><a href="#">今晚80后脱口秀2016</a><img src="images/bofang4.svg"/></span>
+                    <div>
+                        <span><em  class="em3">03</em><a href="#">音乐大明星</a><img src="images/bofang4.svg"/></span>
+                        <div>
+                            <span><em>04</em><a href="#">郭德纲最新相声集</a><img src="images/bofang4.svg"/></span>
+                            <div>
+                                <span><em>05</em><a href="#">都市夜归人</a><img src="images/bofang4.svg"/></span>
+                                <div>
+                                    <span><em>06</em><a href="#">财经狼眼2014</a><img src="images/bofang4.svg"/></span>
+                                    <div>
+                                        <span><em>07</em><a href="#">【一千零一夜】睡前故事</a><img src="images/bofang4.svg"/></span>
+                                        <div>
+                                            <span><em>08</em><a href="#">默默道来</a><img src="images/bofang4.svg"/></span>
+                                            <div>
+                                                <span><em>09</em><a href="#">【K歌之王】</a><img src="images/bofang4.svg"/></span>
+                                                <div>
+                                                    <span><em>10</em><a href="#">世界上所有的童话都是写给大人看的</a><img src="images/bofang4.svg"/></span>
+                                                    <div>
+                                                        <span><em>08</em><a href="#">默默道来</a><img src="images/bofang4.svg"/></span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--歌曲分类-->
+    <div class="star">
+        <ul class="star_ul">
+            <li>风格</li>
+            <li>场景</li>
+            <li>特色专区</li>
+            <li>心情</li>
+            <li>语言</li>
+        </ul>
+        <div class="star_box">
+            <ul class="star_list1">
+                <li><a href="#">流行</a></li>
+                <li><a href="#">古风</a></li>
+                <li><a href="#">拉丁</a></li>
+                <li><a href="#">爵士</a></li>
+                <li><a href="#">电子</a></li>
+                <li><a href="#">古典</a></li>
+                <li><a href="#">中国风</a></li>
+                <li><a href="#">华语民谣</a></li>
+                <li><a href="#">欧美民谣</a></li>
+                <li><a href="#">新世纪</a></li>
+                <li><a href="#">乡村</a></li>
+                <li><a href="#">BossaVosa</a></li>
+                <li><a href="#">嘻哈</a></li>
+            </ul>
+            <ol class="star_list2">
+                <li>
+                    <a href="#"><img src="images/liu1.jpg"/></a>
+                    <span>刘珂矣</span>
+                </li>
+                <li><a href="#"><img src="images/xu.jpg"/></a> <span>许嵩</span></li>
+                <li><a href="#"><img src="images/fei.jpg"/></a> <span>王菲</span></li>
+                <li><a href="#"><img src="images/xu2.jpg"/></a> <span>许嵩</span></li>
+
+            </ol>
+            <ul class="star_list3">
+                <li class="star_li"><a href="#">华语女歌手</a></li>
+                <li class="star_li"><a href="#">华语男歌手</a></li>
+                <li class="star_li"><a href="#">华语女组合</a></li>
+                <li class="star_li"><a href="#">日韩女歌手</a></li>
+                <li class="star_li"><a href="#">日韩男歌手</a></li>
+                <li class="star_li"><a href="#">日韩组合</a></li>
+                <li class="star_li"><a href="#">欧美女组合</a></li>
+                <li class="star_li"><a href="#">欧美女歌手</a></li>
+                <li class="star_li"><a href="#">欧美男歌手</a></li>
+            </ul>
+        </div>
+        <div class="star_box">22222</div>
+        <div class="star_box">33333</div>
+        <div class="star_box">44444</div>
+        <div class="star_box">55555</div>
+    </div>
+</div>
+<div class="bottom">
+    <ul>
+        <li><a href="javascript:void(0)">联系我们</a></li>
+        <li><a href="javascript:void(0)">诚聘因材</a></li>
+        <li><a href="javascript:void(0)">版权声明</a></li>
+        <li><a href="javascript:void(0)">历史合作</a></li>
+        <li><a href="javascript:void(0)">唱片公司</a></li>
+        <li><a href="javascript:void(0)">广告服务</a></li>
+        <li><a href="javascript:void(0)">帮助中心</a></li>
+        <li><a href="javascript:void(0)">友情链接</a></li>
+    </ul>
+    <p>Copyright © 2015-2016 www.tianshuishiyuan.com All Rights Reserved</p>
+    <ol>
+        <li class="li1">关注我们</li>
+        <li><a href="javascript:void(0)"class="bottom_span"><img src="images/weibo1.svg"/></a></li>
+        <li><a href="javascript:void(0)"class="bottom_span"><img src="images/QQ.svg"/></a></li>
+        <li><a href="javascript:void(0)"class="bottom_span"><img src="images/weixin.svg"/></a></li>
+        <li><a href="javascript:void(0)"class="bottom_span"><img src="images/app.svg"/></a></li>
+    </ol>
+</div>
+</body>
+</html>
