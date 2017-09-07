@@ -14,7 +14,7 @@ $(function(){
             $('#music').get(0).pause();
         });
     })();
-    //图片拖拽上传
+   /* //图片拖拽上传
     (function(){
         $('.imgbut').click(function(){
             $('.mesagebut').slideToggle();
@@ -58,7 +58,7 @@ $(function(){
                 }
             }
         }
-    })();
+    })();*/
     //二级菜单
     (function(){
         var index;

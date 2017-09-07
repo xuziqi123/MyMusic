@@ -41,16 +41,12 @@ $(function(){
         $('.img').find('span').html(otitle);
         var oul=$(this).find('img').attr('dataSrc');
         $('.player').find('img').attr('src','images/pause2.jpg');
-        //var oul=array[_index];
         MP3=creatMusic(oul);
         MP3.play();
         //歌词部分
         var osing=$('.textarea').val();
         var olrc=osing.split('[');//分离时间和歌词
         var html='';
-        //if(num<olrc.length){
-
-        //}
         for(var i=0;i<olrc.length;i++){
             var arr=olrc[i].split(']'); //完全分离时间和歌词
             var timer=arr[0].split('.');//时间
@@ -66,7 +62,7 @@ $(function(){
         }
         setInterval(jd,1000);
 
-    })
+    });
     var MS=0;
     $('.prev').click(function(){
         _index--;
@@ -105,20 +101,17 @@ $(function(){
         }
     });
     //进度条
-
     function jd(){
-        var cTime=MS.currentTime;
+        var cTime=MS.currentTime;   //设置返回音频的当前播放位置。
         var aTime=MS.duration;
         var bl=(cTime/aTime)*$('.jd1').width();
         $('.jd2').css('width',bl);
         $('.jd3').animate({'left':bl-11},400);
         //歌词的事件监听
-
         MS.addEventListener("timeupdate",function(){
             var s = parseInt(cTime);
             for(var i = 0; i < s; i++){
                 $("#"+i).addClass("red");
-
             }
         });
     }
@@ -278,7 +271,6 @@ $(function(){
                 $('#ul_Middle li').removeClass('rotate');
                 $('#ul_right li').removeClass('rotate');
                 index--;
-                document.title=index;
                 if(index<0){
                     clearInterval(listTime);
                 }
@@ -326,7 +318,7 @@ $(function(){
         var timer=null;
         oli.click(function(){
             INOW=$(this).index();
-            console.log(INOW);
+
            fade();
         });
         auto();
@@ -359,7 +351,6 @@ $(function(){
     (function(){
        tab();
        function tab(){
-
            var ouli=$('.star_ul li');
            var obox=$('.star_box');
            obox.hide().eq(0).show();

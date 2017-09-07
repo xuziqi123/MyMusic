@@ -1,18 +1,19 @@
 .fr{float:right;}
 .fl{float:left;}
+body,html{width:100%;height:100%;}
 li{list-style:none;}
-#main{width:85%;height:80%;background:-webkit-linear-gradient(top,skyblue,white);margin:5px auto;}
+#main{width:85%;height:80%;background:-moz-linear-gradient(top,skyblue,white);background:-webkit-linear-gradient(top,skyblue,white);margin:5px auto;}
 #main .left,.middle{width:20%;height:100%;margin-left:5px;border-right:1px dotted gray;}
 #main .right{width:58%;height:100%;}
 #main .left .seardiv{width:85%;height:25px;margin:10px auto;position:relative;}
 #main .left .seardiv .text{width:80%;height:20px;border:1px;border-radius:5px;}
-#main .left .seardiv .search{width:15%;height:20px;position:absolute;top:2px;right:10px;border:0px;background:url(../images/search.svg);background-size:100% 100%;}
+#main .left .seardiv .search{width:15%;height:20px;position:absolute;top:2px;right:10px;border:0;background:url(../images/search.svg);background-size:100% 100%;}
 #main .left ul{width:85%;margin:5px auto;}
 #main .left ul li{width:100%;margin-top:1px;}
 #main .left ul li span,.con p{width:100%;height:25px;display:block;margin-top:3px;}
 #main .left ul li span a{font-weight:bold;}
 .con p{border-bottom:1px dotted gray;}
-#main .left ul li span a,.con p a{width:98%;height:100%;font-size:14px;transition:1s all;font-family:"Microsoft YaHei";line-height:25px;text-indent:5px;}
+#main .left ul li span a,.con p a{width:98%;height:100%;font-size:14px;transition:1s all;line-height:25px;text-indent:5px;}
 #main .left .con p a:hover{margin-left:20px;}
 #main .left ul li .con{width:100%;height:100px;display:none;background:palegreen;}
 

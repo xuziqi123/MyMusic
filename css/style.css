@@ -1,9 +1,6 @@
 
-
-
-
 /*音乐播放导航*/
-.wrap{width:85%;height:0px;background:url(../images/banner.jpg);margin:-1px auto;position:relative;display:block;}
+.wrap{width:85%;height:0;background:url(../images/banner.jpg);margin:-1px auto;position:relative;display:block;}
 .wrap ul li{list-style:none;float:left;transition:all 0.5s;position:absolute;width:150px;height:150px;}
 .wrap ul li img{border-radius:50%;}
 .wrap ul li:nth-child(1){top:15px;left:15px;}
@@ -12,7 +9,7 @@
 .wrap ul li:nth-child(2) img{width:90px;height:90px;}
 .wrap ul li:nth-child(3){top:63px;left:304px;}
 .wrap ul li:nth-child(3) img{width:120px;height:120px;}
-.wrap ul li:nth-child(4){top:80px;right:530px;}
+.wrap ul li:nth-child(4){top:80px;right:400px;}
 .wrap ul li:nth-child(4) img{width:100px;height:100px;}
 .wrap ul li:hover{-webkit-transform:scale(1.1);}
 .wrap ul li.rotli img.rot{-webkit-animation:rt 2s infinite linear;}
@@ -20,13 +17,16 @@
     from{-webkit-transform:rotate(0deg);-webkit-transform-origin:center;}
     to{-webkit-transform:rotate(360deg);-webkit-transform-origin:center;}
 }
-.wrap .geci{width:240px;height:235px;box-shadow:0px 0px 1px white;position:absolute;right:200px;top:3px;color:greenyellow;}
+.wrap .geci{width:240px;height:235px;position:absolute;right:90px;top:3px;color:greenyellow;}
 .wrap .geci span{width:80%;height:25px;display:block;text-align:center;line-height:30px;margin:3px auto;position:relative;}
 .wrap .geci .gecibox{width:100%;height:175px;position:relative;overflow-y:scroll;}
 .wrap .geci .text{width:90%;position:absolute;top:0px;left:13px;}
 .wrap .geci .text p{width:100%;height:24px;text-align:center;margin:1px auto;font-size:12px;}
-.gecibox::-webkit-scrollbar{width:5px;background:skyblue;}
+.gecibox::-webkit-scrollbar{SCROLLBAR-FACE-COLOR:red;width:5px;background:skyblue;}
+
+
 .gecibox::-webkit-scrollbar-button{width:2px;background-color:orange;}
+
 .gecibox::-webkit-scrollbar-thumb{background:greenyellow;}
 .wrap .geci .text p.red{color:orangered;}
 
@@ -45,7 +45,7 @@
 .control .jindu .jd2{height:4px;width:0px;line-height:30px;background:skyblue;position:absolute;top:14px;left:-10px;}
 .control .jindu .jd3{width:10px;height:10px;background:skyblue;box-shadow:0px 0px 8px white;border-radius:50%;position:absolute;left:-11px;top:11px;}
 .control .listimg{width:15px;height:15px;position:absolute;right:30px;top:5px;}
-.mSIC{width:560px;height:300px;position:fixed;z-index:9;bottom:-100px;}
+.mSIC{width:560px;height:300px;position:fixed;z-index:9999;bottom:-100px;display:block;}
 .mSIC .menu{width:100%;background:#0a141f;height:0px;position:absolute;top:90px;left:0px;overflow-y:scroll;}
 .mSIC .menu::-webkit-scrollbar{width:10px;background:skyblue;}
 .mSIC .menu::-webkit-scrollbar-thumb{background:greenyellow;}
@@ -55,7 +55,7 @@
 .mSIC .menu ul li.border a{background:url(../images/pause.png) no-repeat 0px 3px;color:springgreen;}
 .mSIC .menu ul li.border{background:#060c13;}
 
-.nav{width:85%;height:360px;border:1px solid gray;position:relative;top:-5px;margin:0px auto;background:#112233;}
+.nav{width:85%;height:360px;position:relative;top:-20px;margin:0 auto;background:#112233;}
 .nav .pic{width:100%;height:120%;overflow:hidden;margin-top:20px;}
 .nav .pic ul{width:100%;height:100%;position:relative;-webkit-perspective:900px;margin:auto;}
 .nav .pic ul li{width:500px;height:280px;list-style:none;opacity:0;-webkit-transform-style:preserve-3d;transition:1.5s;float:left;z-index:1;position:absolute;top:0px;-webkit-transform:tranlateZ(-100);}
@@ -80,24 +80,24 @@
 .nav .pic .nextb:hover,.nav .pic .prevb:hover{opacity:0.5;}
 
 /*在线首播*/
-.firstbread,.hotlist{width:85%;height:350px;border:1px solid lightgray;border-radius:5px;background:-webkit-linear-gradient(top, rgba(211, 211, 211, 0.32),white);margin:10px auto;  }
+.firstbread,.hotlist{width:85%;height:350px;border:1px solid lightgray;border-radius:5px;background:-webkit-linear-gradient(top, rgba(211, 211, 211, 0.32),white);margin:0px auto;  }
 .firstbread .title{width:98%;height:30px;border-left:7px solid mediumpurple;border-radius:4px;margin:10px auto;background:-webkit-linear-gradient(top, rgba(211, 211, 211, 0.4),white);border-bottom:1px solid lightgray;box-shadow:0px 0px 6px yellow;}
-.firstbread .title .title_a1{width:100px;font-size:16px;height:25px;text-indent:15px;line-height:25px;font-weight:bold;font-family:'楷体';display:block;float:left;}
+.firstbread .title .title_a1{width:100px;font-size:16px;height:25px;text-indent:15px;line-height:25px;font-weight:bold;display:block;float:left;}
 .title_a2{width:50px;float:left;height:25px;margin-left:20px;line-height:25px;font-size:14px;color:green;}
 .firstbread .title ul{width:10%;height:20px;float:right;line-height:30px;margin-top:5px;}
 .firstbread .title ul li{list-style:none;width:20px;transition:0.5s;height:20px;line-height:20px;text-align:center;border-radius:50%;float:left;background:#00ff00;margin:0 0 0 10px;}
 
 .firstbread .title ul li.hover{-webkit-transform:scale(1.3);}
-.firstbread .listimg{width:98%;height:290px;margin:0px auto;}
-.firstbread ul{width:100%;height:100%;margin:0px auto;padding:0px;}
-.firstbread ul li{width:205px;height:285px;list-style:none;position:relative;border:1px solid lightgray;float:left;margin:0px 5px;}
+.firstbread .listimg{width:98%;height:290px;margin:0 auto;}
+.firstbread ul{width:100%;height:100%;margin:0 auto;padding:0;}
+.firstbread ul li{width:18%;height:95%;list-style:none;position:relative;border:1px solid lightgray;float:left;margin:0 9px;}
 .firstbread ul li img{width:100%;height:100%;transition:1.5s;}
 .firstbread ul li img.roty{-webkit-transform:rotateY(360deg);}
-.firstbread ul li .span{width:100%;height:0px;transition:0.8s;position:absolute;bottom:65px;background:rgba(0,0,0,0.8);}
+.firstbread ul li .span{width:100%;height:0;transition:0.8s;position:absolute;left:0;bottom:65px;background:rgba(0,0,0,0.8);}
 .firstbread ul li:hover .span{height:60px;}
 .firstbread ul li .span span{height:25px;width:80%;position:absolute;left:0px;margin-top:5px;text-indent:10px;display:block;font-size:16px;line-height:30px;color:green;}
 .firstbread ul li .span p{height:20px;width:80%;position:absolute;left:0px;top:25px;text-indent:10px;display:block;font-size:12px;line-height:30px;color:white;}
-.firstbread ul li .span img{position:absolute;left:110px;}
+.firstbread ul li .span img{position:absolute;left:90px;}
 .firstbread ul li a{width:50%;height:65px;background:#0eaf52;position:absolute;bottom:0px;display:block;float:left;}
 .firstbread ul li a:nth-of-type(1){left:0px;}
 .firstbread ul li a:nth-of-type(2){right:0px;}
